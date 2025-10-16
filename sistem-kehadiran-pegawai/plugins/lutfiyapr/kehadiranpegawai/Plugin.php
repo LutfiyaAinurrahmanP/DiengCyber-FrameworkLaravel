@@ -49,7 +49,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            \Lutfiyapr\KehadiranPegawai\Components\MyComponent::class => 'myComponent',
+            // \Lutfiyapr\KehadiranPegawai\Components\MyComponent::class => 'myComponent',
         ];
     }
 
