@@ -4,6 +4,7 @@ namespace Lutfiyapr\KehadiranPegawai;
 
 use Backend\Facades\Backend;
 use Backend\Models\UserRole;
+use Illuminate\Support\Facades\Route;
 use System\Classes\PluginBase;
 
 /**
@@ -32,7 +33,13 @@ class Plugin extends PluginBase
     /**
      * Boot method, called right before the request route.
      */
-    public function boot(): void {}
+    public function boot(): void {
+        // Load routes dengan CORS middleware
+        Route::middleware(['web', \Lutfiyapr\KehadiranPegawai\Middleware\Cors::class])
+            ->group(function () {
+                require __DIR__ . '/routes.php';
+            });
+    }
 
     /**
      * Registers any frontend components implemented in this plugin.

@@ -1,11 +1,20 @@
 1.0.0:
-    - 'First version of KehadiranPegawai'
+    - "First version of KehadiranPegawai"
 1.0.1:
-    - 'Create Pegawais Table'
+    - "Create Pegawais Table"
     - v1.0.1/create_pegawais_table.php
 1.0.2:
-    - 'Create Presensis Table'
+    - "Create Presensis Table"
     - v1.0.2/create_presensis_table.php
 1.0.3:
-    - 'Seed data pegawai'
+    - "Seed data pegawai"
     - seed_pegawai_table.php
+1.0.4:
+    - "Create Users Table"
+    - v1.0.4/create_users_table.php
+1.0.5:
+    - "Add user_id to pegawai table"
+    - add_user_id_to_pegawai_table.php
+1.0.6:
+    - "Seed admin and user data"
+    - seed_admin_user.php
